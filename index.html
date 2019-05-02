@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<title></title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+
+<script src="js/popup.mini.js"></script>
+
+<script>
+
+$(function () {
+
+	var elm = $('#foot');
+
+	var startPos = 500;
+
+	$.event.add(window, "scroll", function () {
+
+		var p = $(window).scrollTop();
+
+		if (p > startPos) {
+
+			$("#w-scrol").show();
+
+		} else {
+
+			$("#w-scrol").hide();
+
+		}
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+<embed src="images/music.mp3" hidden ="true" autostart="true" loop="true">
+<section class="w-main">
+
+			<p class="w-main-p">Helping you find the public transport information.</p>
+
+			<div class="w-nav">
+
+				<a class="w-linkone" href="javascript:;"title="We are a government organization to help people know the pubilc transport system. 
+Our goal is to help people find the travel way that suits them best.">Who Are We</a>
+
+				<a class="w-linktwo" href="javascript:;"title="We have the information about tram, train, bus and ferry. ">What We Have</a>
+
+				<a class="w-linkthree" href="javascript:;"title="How can I know the timetable of each transpot? 
+If you have already choosed the public travel style, you can check the timetable on PTV.">FAQ</a>
+
+				<a class="w-linkfour" href="javascript:;"title="If you have some question or good idea. You can contact us on 6141758063.">Contact Us</a>
+
+			</div>
+
+		</section>
+
+		<!--loginpop-->
+
+		<div class="popup-login">
+
+			<div class="popup-close"></div>
+
+			<div class="popup-title">
+
+				<span>Login</span>
+
+				<P>Login with your username and password.</P>
+
+			</div>
+
+			<ul class="popup-menu">
+
+				<li style="padding-top: 25px;">
+     
+  
+					<li>
+<span>Username:<input type="text" name="" id="" value="" class="w-name" /></span>
+
+				</li>
+<li>
+<span><i>*</i>Password:<input type="text" name="" id="" value="" class="w-name" />
+  </span>
+</li>
+					<li>
+			
+ <input type="button" name="" id="btn"  href=""  class="w-subbtn" value=Login>
+   
+
+</li>
+				
+			</ul>
+		</div>
+
+		<!--loginpop-->
+
+		<section class="w-main1">
+
+			<ul class="w-menu">
+
+				<li class="Tram"><a href="#w-main2"><span></span></a></li>
+
+				<li class="Train"><a href="#w-main3"><span></span></a></li>
+
+				<li class="Bus"><a href="#w-main4"><span></span></a></li>
+
+				<li class="Ferry"><a href="#w-main5"><span></span></a></li>
+
+			</ul>
+
+		</section>
+
+		<section class="w-main2" id="w-main2">
+
+			<div class="wrap1004">
+
+				<img src="images/tram.gif" class="w-wide-pic" />
+
+				<div class="w-wide-text">
+
+					<span class="title">Public Tram</span>
+
+
+					<p>
+
+Trams are a major form of public transport in Melbourne, the capital city of the state of Victoria, Australia. As of May 2017, the Melbourne tramway network consists of 250 kilometres (160 miles) of double track, 493 trams, 24 routes, and 1,763 tram stops. The operator Yarra Trams claims the system is the largest operational urban tram network in the world. Ticketing, public information and patronage promotion are undertaken by Victoria's public transport body, Public Transport Victoria. The multi-modal integrated ticketing system, myki, currently operates across the tram network.
+				</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="w-main3" id="w-main3">
+
+			<div class="wrap1004">
+
+				<div class="w-wide-text">
+
+					<span class="title">Public Train</span>
+
+
+					<p>
+		As the city's metropolitan rail service, Metro operates 220 six carriage trains across 965 kilometres of track, transporting 415,000 customers each day. We aim to encourage the Melbourne community's vibrant and ever evolving lifestyles, by providing a seamless transport solution to keep individuals connected. With 15 lines, 222 stations and services seven days a week, Metro can take you wherever you're headed across the city, whenever you want to go.
+					</p>
+
+				</div>
+
+				<img src="images/Train.gif" class="w-wide-pic" />
+
+			</div>
+
+		</section>
+
+		<section class="w-main4" id="w-main4">
+
+			<div class="wrap1004">
+
+				<img src="images/Bus.jpg" class="w-wide-pic" />
+
+				<div class="w-wide-text">
+
+					<span class="title">Public Bus</span>
+
+
+					<p>
+
+						While the city relies predominantly on an inner-city tram network and radial train network, the outer suburbs of Melbourne are primarily serviced by bus. Melbourne's buses also provide a local feeder to Melbourne's train and tram network. Unlike Melbourne's train and tram networks, up until the 1950s, buses in Melbourne were operated in a largely deregulated free market by private companies.
+
+					</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="w-main5" id="w-main5">
+
+			<div class="wrap1004">
+
+				<div class="w-wide-text">
+
+					<span class="title">Public Boat & Ferry</span>
+
+					<p>
+
+						We oversee three ferry services that operate in Victoria:<br>* Western Port Ferry, a ferry service which runs from Stony Point to French Island, Phillip Island (formerly known as the French Island Ferry).<br>* Westgate Punt, a ferry service that runs between Spotswood Jetty and Westgate Landing in Port Melbourne.<br>* Port Phillip Ferries, a passenger ferry service that runs between Portarlington on the Bellarine Peninsula and Victoria Harbour in Docklands, Melbourne. 
+					</p>
+
+				</div>
+
+				<img src="images/Ferry.GIF" class="w-wide-pic" />
+
+			</div>
+
+		</section>
+
+
+		<footer class="foot" id="foot" >
+
+			<div id="w-scrol" style="display: none;">
+
+			<div class="f-title">Australia Public Transport System.</div>
+
+			<div class="w-nav" style=" width: 230px; margin-top: 10px;">
+
+				<a class="w-login" href="javascript:;">Login</a>
+
+
+			</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+    <script type="text/javascript">
+
+
+        var aInputs = document.getElementsByTagName('input');
+
+        var oClear = document.getElementById('clear');
+
+        var db = openDatabase('LoginSystem', '1.0', 'textdb', 3*1024*1024);
+
+        db.transaction(function(contex) {
+
+	 contex.executeSql('create table if not exists userinf (id unique,name,password)');
+   	 contex.executeSql('insert into userinf (id,name,password) values (1,"a","a")');
+  	 contex.executeSql('insert into userinf (id,name,password) values (2,"b","b")');
+	
+        });
+
+        var oBtn = document.getElementById('btn');
+
+        var logstate = true;
+
+        oBtn.onclick = function() {
+
+            if (aInputs[0].value && aInputs[1].value) {
+
+                db.transaction(function(contex) {
+
+                    contex.executeSql('select * from userinf', [], function(con,results) {
+
+                        var len = results.rows.length, i;
+
+                        for ( i = 0; i < len; i++) {
+
+                            if (aInputs[0].value == results.rows.item(i).name && aInputs[1].value == results.rows.item(i).password) {
+
+                                logstate = false;
+
+                                break;
+                            }
+                        }
+
+                        if (logstate) {
+
+                            alert('Wrong Username or Password！');
+
+                        } else {
+
+                            alert('successful Login！');
+                        }
+                    });
+                });
+
+            } else {
+
+                alert('Need Username or Password！！');
+            }
+        }
+
+        oClear.onclick = function() {
+
+            db.transaction(function(contex) {
+
+                contex.executeSql('drop table userinf');
+
+            });
+        }
+
+    </script>
+
+<script type='text/javascript'>
+
+	(function(){
+
+		 new PopUp_api({el:'.w-login',html:'.popup-login'});
+		
+	})()
+
+</script>
+
+</html>
+
